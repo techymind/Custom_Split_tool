@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "splittool"
+    }
+  },
+  "defaultProject": "splittool",
+  "cli": {
+    "analytics": "25b12233-7029-4a88-bb12-0edf1783978f"
+  }
 }

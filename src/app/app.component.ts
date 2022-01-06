@@ -17,7 +17,7 @@ export class AppComponent {
   }
 
   removeEmptyRows(value){
-    return value != "";
+    return value.trim().length > 0;
   }
   generateReport(){
 
@@ -44,7 +44,7 @@ export class AppComponent {
 
 
         if(pluginoutput.split('\n')[1] == undefined){
-          window.alert("there was a error in the file - Please correct the file data and re upload")
+          continue;
         }
         let secondline = pluginoutput.split('\n')[1].trim();
       if(secondline.startsWith('Nessus')){
